@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models.Tests.Unit", "test\unit\Models.Tests.Unit.csproj", "{B603DC92-963C-446F-B80F-528CADBCA4DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{222A7E91-BA25-46B2-86EB-79212FD2D65E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.gitlab-ci.yml = .gitlab-ci.yml
+		CHANGELOG.md = CHANGELOG.md
+		CONTRIBUTING.md = CONTRIBUTING.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models.Common", "src\Models.Common.csproj", "{4F1E8A85-8687-4828-812A-5BA0A4A41282}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B603DC92-963C-446F-B80F-528CADBCA4DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B603DC92-963C-446F-B80F-528CADBCA4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B603DC92-963C-446F-B80F-528CADBCA4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B603DC92-963C-446F-B80F-528CADBCA4DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1E8A85-8687-4828-812A-5BA0A4A41282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1E8A85-8687-4828-812A-5BA0A4A41282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1E8A85-8687-4828-812A-5BA0A4A41282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1E8A85-8687-4828-812A-5BA0A4A41282}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A8161A7-4402-4BEC-BA0E-455E7FDAA466}
+	EndGlobalSection
+EndGlobal
