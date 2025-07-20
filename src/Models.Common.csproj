@@ -73,6 +73,7 @@
   
   <ItemGroup>
     <Folder Include="Events\V1\" />
+    <Folder Include="ValueObjects\V1\" />
   </ItemGroup>
   
 </Project>
