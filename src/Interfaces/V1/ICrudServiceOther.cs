@@ -1,4 +1,4 @@
-﻿namespace Gay.Silverbranch.API.Models.Interfaces.V1;
+﻿namespace Gay.Silverbranch.Api.Models.Interfaces.V1;
 
 public interface ICrudServiceOther<T>
 //where T : BaseModel

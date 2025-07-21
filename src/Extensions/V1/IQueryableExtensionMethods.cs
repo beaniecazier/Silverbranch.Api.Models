@@ -1,6 +1,6 @@
-using Gay.Silverbranch.API.Models.Entities.V1;
+using Gay.Silverbranch.Api.Models.Entities.V1;
 
-namespace Gay.Silverbranch.API.Models.Extensions.V1;
+namespace Gay.Silverbranch.Api.Models.Extensions.V1;
 
 public static class IQueryableExtensionMethods
 {

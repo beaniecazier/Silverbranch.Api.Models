@@ -1,6 +1,6 @@
-﻿using Gay.Silverbranch.API.Models.Interfaces;
+﻿using Gay.Silverbranch.Api.Models.Interfaces;
 
-namespace Gay.Silverbranch.API.Models;
+namespace Gay.Silverbranch.Api.Models;
 
 public class AbstractFactory<T> : IAbstractFactory<T>
 {

@@ -14,7 +14,7 @@
     <Product>$(Company) API Base Models</Product>
     <Title>$(Product)</Title>
     <AssemblyName>Api.Models</AssemblyName>
-    <RootNamespace>Gay.Silverbranch.API.Models</RootNamespace>
+    <RootNamespace>Gay.Silverbranch.$(AssemblyName)</RootNamespace>
     <PackageId>Gay.Silverbranch.pkg.$(AssemblyName)</PackageId>
     <VersionPrefix>1.1.0</VersionPrefix>
     <VersionSuffix>alpha-$([System.DateTime]::UtcNow.ToString("yyyyMMdd-HHmmss"))</VersionSuffix>

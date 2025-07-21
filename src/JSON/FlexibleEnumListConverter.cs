@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Gay.Silverbranch.API.Models.JSON;
+namespace Gay.Silverbranch.Api.Models.JSON;
 
 public class FlexibleEnumListConverter<T> : JsonConverter<List<T>> where T : struct, System.Enum
 {

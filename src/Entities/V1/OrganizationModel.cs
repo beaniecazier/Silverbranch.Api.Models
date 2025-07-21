@@ -1,7 +1,6 @@
-using Gay.Silverbranch.API.Models.Enum;
-using Gay.Silverbranch.API.Models.Enum.V1;
+using Gay.Silverbranch.Api.Models.Enum.V1;
 
-namespace Gay.Silverbranch.API.Models.Entities.V1;
+namespace Gay.Silverbranch.Api.Models.Entities.V1;
 
 public class OrganizationModel : ContactModel
 {

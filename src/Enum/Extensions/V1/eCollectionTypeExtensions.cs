@@ -1,6 +1,6 @@
-using Gay.Silverbranch.API.Models.Enum.V1;
+using Gay.Silverbranch.Api.Models.Enum.V1;
 
-namespace Gay.Silverbranch.API.Models.Enum.Extensions.V1;
+namespace Gay.Silverbranch.Api.Models.Enum.Extensions.V1;
 
 public static class eCollectionTypeExtensions
 {

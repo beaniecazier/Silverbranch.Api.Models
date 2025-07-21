@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Gay.Silverbranch.API.Models.Entities.V1;
+namespace Gay.Silverbranch.Api.Models.Entities.V1;
 
 public abstract class BaseModel
 {

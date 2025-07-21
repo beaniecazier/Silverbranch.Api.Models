@@ -1,4 +1,4 @@
-namespace Gay.Silverbranch.API.Models.Entities.V1;
+namespace Gay.Silverbranch.Api.Models.Entities.V1;
 
 public class ContactModel: BaseModel
 {

@@ -1,4 +1,4 @@
-namespace Gay.Silverbranch.API.Models.Enum.V1;
+namespace Gay.Silverbranch.Api.Models.Enum.V1;
 
 public enum eValidationType
 {

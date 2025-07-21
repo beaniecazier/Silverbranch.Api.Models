@@ -1,4 +1,4 @@
-﻿namespace Gay.Silverbranch.API.Models.Interfaces;
+﻿namespace Gay.Silverbranch.Api.Models.Interfaces;
 
 public interface IAbstractFactory<T>
 {

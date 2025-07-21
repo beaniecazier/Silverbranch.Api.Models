@@ -1,7 +1,7 @@
-﻿using Gay.Silverbranch.API.Models.Enum.V1;
+﻿using Gay.Silverbranch.Api.Models.Enum.V1;
 using LanguageExt;
 
-namespace Gay.Silverbranch.API.Models.Interfaces.V1;
+namespace Gay.Silverbranch.Api.Models.Interfaces.V1;
 
 public interface ISerializable
 {

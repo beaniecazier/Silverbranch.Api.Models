@@ -1,9 +1,7 @@
 using FluentAssertions;
 
-using Gay.Silverbranch.API.Models.Enum;
-using Gay.Silverbranch.API.Models.Enum.Extensions;
-using Gay.Silverbranch.API.Models.Enum.Extensions.V1;
-using Gay.Silverbranch.API.Models.Enum.V1;
+using Gay.Silverbranch.Api.Models.Enum.Extensions.V1;
+using Gay.Silverbranch.Api.Models.Enum.V1;
 
 namespace Models.Tests.Unit;
 

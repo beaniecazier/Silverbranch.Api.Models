@@ -1,7 +1,6 @@
-﻿using Gay.Silverbranch.API.Models.Enum;
-using Gay.Silverbranch.API.Models.Enum.V1;
+﻿using Gay.Silverbranch.Api.Models.Enum.V1;
 
-namespace Gay.Silverbranch.API.Models.Attributes.V1;
+namespace Gay.Silverbranch.Api.Models.Attributes.V1;
 
 [System.AttributeUsage(System.AttributeTargets.All)]
 public class PropertyDocumentationAttribute : System.Attribute

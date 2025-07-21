@@ -1,6 +1,6 @@
 ﻿using LanguageExt;
 
-namespace Gay.Silverbranch.API.Models.Interfaces.V1;
+namespace Gay.Silverbranch.Api.Models.Interfaces.V1;
 
 public interface ICrudService<T>
 //where T : BaseModel

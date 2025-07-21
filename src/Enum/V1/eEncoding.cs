@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Gay.Silverbranch.API.Models.Enum.V1;
+namespace Gay.Silverbranch.Api.Models.Enum.V1;
 
 /// <summary>
 /// The way in which data will be encoded,
