@@ -1,9 +1,11 @@
 ![Silverbranch Codeworks Banner](https://gitlab.com/silverbranch-utilities/assets/-/raw/trunk/banner-pride.png)
 
-# 📦 [SILVERBRANCH CODEWORKS COMMON MODELS]
+# 📦 SILVERBRANCH CODEWORKS COMMON MODELS
 ![GitHub License](https://img.shields.io/github/license/beaniecazier/Silverbranch.Api.Models)
 
 The baseline model creation package that allows the use of the Template Project Builder tool
+
+> This package is built for [.NET version(s)] and supports [platforms, if applicable].
 
 ## Project status
 This is currently in an unreleased alpha state while I get everything ready for the first two major projects to be pushed
