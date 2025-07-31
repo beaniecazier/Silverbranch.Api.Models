@@ -44,8 +44,10 @@ deploy:
       --password $CI_JOB_TOKEN \
       --store-password-in-clear-text
     - dotnet build -c Release
+    - PACKAGE_PATH=$(find . -type f -name "Gay.Silverbranch.pkg.Api.Models*.nupkg"| head -n 1)
+    - echo "Pushing $PACKAGE_PATH"
     - |
-      dotnet nuget push "/builds/silverbranch-utilities/api/model/src/bin/Release/*.nupkg" \
+      dotnet nuget push "$PACKAGE_PATH" \
       --source gitlab
     - dotnet nuget remove source GroupPackagesSilverbranchUtilities
   rules:
