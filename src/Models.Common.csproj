@@ -96,7 +96,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Gay.Silverbranch.pkg.Utilities.General" Version="1.0.0-alpha-20250731-172824" />
     <PackageReference Include="LanguageExt.Core" Version="5.0.0-beta-54" />
     <PackageReference Include="Nanoid" Version="3.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="8.1.1" />
@@ -105,6 +104,10 @@
   <ItemGroup>
     <Folder Include="Events\V1\" />
     <Folder Include="ValueObjects\V1\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\general\src\General.csproj" />
   </ItemGroup>
   
 </Project>
