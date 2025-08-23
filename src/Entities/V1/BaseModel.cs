@@ -5,14 +5,6 @@ namespace Gay.Silverbranch.Api.Models.Entities.V1;
 
 public abstract class BaseModel
 {
-    // ProjectScaffolder.Models Specific Notes Here
-    //--------------------------------------------------------------------------
-    //
-
-    //protected const string CLASS_NAME = "BaseModel";
-
-    #region Properties
-
     private const string NameDescription = "Reference name of model";
     [SwaggerSchema(Description = NameDescription)]
     // [ModelDocumentation(Description = NameDescription,
@@ -41,7 +33,7 @@ public abstract class BaseModel
 
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     private int _entryIdentity;
-    private string _commonIdentity = "0130PU55Y0130";
+    private string _referenceIdentity = "0130PU55Y0130";
     private string _ownedBy = "INVALID NOT A USER";
 
     private const string EntryIdDescription = "Database specific entry id";
@@ -54,15 +46,15 @@ public abstract class BaseModel
     //     ReadOnly = true)]
     public int EntryIdentity => _entryIdentity;
 
-    private const string CommonIdDescription = "The common model id, used to relate a model to its history";
-    [SwaggerSchema(Description = CommonIdDescription, ReadOnly = true)]
+    private const string ReferenceIdDescription = "The common model id, used to relate a model to its history";
+    [SwaggerSchema(Description = ReferenceIdDescription, ReadOnly = true)]
     // [ModelDocumentation(Description = CommonIdDescription,
     //     DBType = "int",
     //     Format = "uint",
     //     Encoding = "uint",
     //     Required = true,
     //     ReadOnly = true)]
-    public string CommonIdentity => _commonIdentity;
+    public string ReferenceIdentity => _referenceIdentity;
     
     private const string OwnedByDescription = "Entry specific notes";
     [SwaggerSchema(Description = OwnedByDescription, ReadOnly = true)]
@@ -171,10 +163,6 @@ public abstract class BaseModel
     [SwaggerIgnore]
     public bool IsModified { get; set; } = false;
 
-    #endregion
-
-    #region Constructors
-
     protected BaseModel() { }
 
     protected BaseModel(string id, string name, string createdBy, DateTime createdOn, string notes)
@@ -182,7 +170,7 @@ public abstract class BaseModel
         Name = name;
         Notes = notes;
 
-        _commonIdentity = id;
+        _referenceIdentity = id;
         _ownedBy = createdBy;
         _modifiedBy = createdBy;
         _modifiedOn = createdOn;
@@ -194,7 +182,7 @@ public abstract class BaseModel
         Notes = model.Notes;
         _ownedBy = model.OwnedBy;
 
-        _commonIdentity = model.CommonIdentity;
+        _referenceIdentity = model.ReferenceIdentity;
         _modifiedBy = model.ModifiedBy;
         _modifiedOn = model.ModifiedOn;
 
@@ -218,7 +206,7 @@ public abstract class BaseModel
         Notes = model.Notes;
         _ownedBy = model.OwnedBy;
 
-        _commonIdentity = model.CommonIdentity;
+        _referenceIdentity = model.ReferenceIdentity;
         _modifiedBy = model.ModifiedBy;
         _modifiedOn = model.ModifiedOn;
 
@@ -230,9 +218,7 @@ public abstract class BaseModel
         _deletedOn = isDeleted.HasValue ? DateTime.UtcNow : model.DeletedOn;
         _isDeleted = isDeleted ?? model.IsDeleted;
     }
-
-    #endregion
-
+    
     public void SetHiddenState(bool newState, string user)
     {
         _isHidden = newState;

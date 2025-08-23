@@ -6,19 +6,22 @@ public enum ePronoun
 {
     [Display(Name = "ERROR")]
     ERROR = -1,
+    
+    [Display(Name = "None")]
+    None = 0,
 
     [Display(Name = "She/Her")]
-    SheHer = 0,
+    SheHer = 1,
 
     [Display(Name = "Fae/Faer")]
-    FaeFaer = 1,
+    FaeFaer = 2,
 
     [Display(Name = "They/Them")]
-    TheyThem = 2,
+    TheyThem = 3,
 
     [Display(Name = "He/Him")]
-    HeHim = 3,
+    HeHim = 4,
 
     [Display(Name = "It/Its")]
-    ItIts = 4,
+    ItIts = 5,
 }

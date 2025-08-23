@@ -22,7 +22,7 @@ public static class IEnumerableExtensionMethods
         ArgumentOutOfRangeException.ThrowIfLessThanOrEqual(pageSize,0,nameof(pageSize));
         List<T> page = new List<T>();
         int index = 0;
-        var groups = entries.GroupBy(x => x.CommonIdentity);
+        var groups = entries.GroupBy(x => x.ReferenceIdentity);
 
         //  .   .   .
         //  0   .   .

@@ -13,7 +13,7 @@ public static class IQueryableExtensionMethods
         //         .OrderByDescending(m => m.ModifiedOn)
         //         .First());
         var grouped = query
-            .GroupBy(x => x.CommonIdentity)
+            .GroupBy(x => x.ReferenceIdentity)
             .Select(g => new
             {
                 CommonIdentity = g.Key,
@@ -23,7 +23,7 @@ public static class IQueryableExtensionMethods
         var result = query
             .Join(
                 grouped,
-                item => new { item.CommonIdentity, item.ModifiedOn },
+                item => new { CommonIdentity = item.ReferenceIdentity, item.ModifiedOn },
                 latest => new { latest.CommonIdentity, ModifiedOn = latest.LatestModified },
                 (item, _) => item);
 
@@ -85,7 +85,7 @@ public static class IQueryableExtensionMethods
         IEnumerable<string> ids)
         where T : BaseModel
     {
-        return query.Where(m => ids.Contains(m.CommonIdentity));
+        return query.Where(m => ids.Contains(m.ReferenceIdentity));
     }
 
     public static IQueryable<T> FilterByModifiedDates<T>(this IQueryable<T> query,

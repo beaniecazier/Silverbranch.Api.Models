@@ -4,7 +4,7 @@ namespace Gay.Silverbranch.Api.Models.Enum.V1;
 
 public enum eStreetType
 {
-    [Display(Name ="ERROR")] ERROR = -1,
+    [Display(Name = "ERROR")] ERROR = -1,
     [Display(Name = "Alley")] Alley = 0,
     [Display(Name = "Annex")] Annex = 1,
     [Display(Name = "Arcade")] Arcade = 2,

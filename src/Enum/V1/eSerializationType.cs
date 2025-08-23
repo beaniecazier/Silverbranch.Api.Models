@@ -1,11 +1,11 @@
-﻿namespace Gay.Silverbranch.Api.Models.Enum.V1
+﻿namespace Gay.Silverbranch.Api.Models.Enum.V1;
+
+public enum eSerializationType
 {
-    public enum eSerializationType
-    {
-        ERROR = -1,
-        None = 0,
-        Csv = 1,
-        Json = 2,
-        Xml = 3,
-    }
+    ERROR = -1,
+    None = 0,
+    Csv = 1,
+    Json = 2,
+    Xml = 3,
 }
+
